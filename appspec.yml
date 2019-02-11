@@ -12,6 +12,9 @@ permissions:
      type:
        - file
 hooks:
+   DownloadBundle:
+   - location: scripts/download.sh
+      runas: root
    BeforeInstall:
     - location: scripts/installapache.sh
       runas: root
